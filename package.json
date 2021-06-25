@@ -1,0 +1,23 @@
+{
+  "name": "todo-app-api",
+  "version": "1.0.0",
+  "description": "mock api for todo app reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "json",
+    "server"
+  ],
+  "author": "John Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
