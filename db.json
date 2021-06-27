@@ -2,7 +2,12 @@
   "todos": [
     {
       "id": 1,
-      "title": "todo-list",
+      "title": "This is first todo",
+      "status": "new"
+    },
+    {
+      "id": 2,
+      "title": "This is second todo",
       "status": "new"
     }
   ]
