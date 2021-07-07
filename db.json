@@ -2,12 +2,17 @@
   "todos": [
     {
       "id": 1,
-      "title": "This is first todo",
+      "title": "Todo App",
       "status": "new"
     },
     {
       "id": 2,
-      "title": "This is second todo",
+      "title": "React Hooks",
+      "status": "new"
+    },
+    {
+      "id": 2,
+      "title": "Auth: John Nguyen",
       "status": "new"
     }
   ]
