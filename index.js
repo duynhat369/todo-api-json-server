@@ -27,6 +27,7 @@ server.use((req, res, next) => {
     next();
 });
 
+//Custom output for LIST with pagination
 router.render = (req, res) => {
     const headers = res.getHeaders();
 
