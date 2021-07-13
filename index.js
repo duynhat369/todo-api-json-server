@@ -48,7 +48,7 @@ router.render = (req, res) => {
     }
 
     //Otherwise, keep default behavior
-    res.status(500).jsonp(res.locals.data)
+    res.jsonp(res.locals.data)
 }
 
 // Use default router
