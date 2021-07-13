@@ -31,7 +31,7 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
     const headers = res.getHeaders();
 
-    const totoCountHeader = header['x-total-count'];
+    const totoCountHeader = headers['x-total-count'];
     if (req.method === 'GET' && totoCountHeader) {
         const queryParams = queryString.parse(req._parsedUrl.query);
 
@@ -40,9 +40,11 @@ router.render = (req, res) => {
             pagination: {
                 _page: Number.parseInt(queryParams._page) || 1,
                 _limit: Number.parseInt(queryParams._limit) || 6,
-                _totalRows: Number.parseInt(queryParams._totalRows),
+                _totalRows: Number.parseInt(totoCountHeader),
             },
         }
+
+        return res.jsonp(result);
     }
 
     //Otherwise, keep default behavior
